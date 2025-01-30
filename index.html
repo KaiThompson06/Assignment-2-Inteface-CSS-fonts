@@ -8,11 +8,11 @@
     <meta name="robots" content="noindex, nofollow">
     <title>Lyrics Assignment</title>
     <!--fonts-->
+    <!-- preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+    <!-- all seperate font imports so I could test and remove easily -->
     <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Road+Rage&display=swap" rel="stylesheet">
@@ -22,9 +22,13 @@
 
 </head>
 <body>
+    
     <header>
+        <!-- big title at the top -->
         <h1><span class = "red-right-hand">Red Right Hand</span></h1>
+        <!-- sub title -->
         <h3>by Nick cave and the bad seeds</h3>
+        <!-- simple navigation bar with some basic functionality -->
         <nav>
             <menu>
                 <li>
@@ -42,53 +46,57 @@
             </menu>
         </nav>
     </header>
-<!-- 
-    <section id="video">
-    </section>
-     -->
-    <section id="verse1">
-        <h2>Verse 1</h2>
-        <p>Take a little walk to the edge of town and go across the tracks</p>
-        <p>Where the viaduct looms, like a bird of doom as it shifts and cracks</p>
-        <p>Where secrets lie in the border fires in the humming wires</p>
-        <p>Hey man, you know you're never coming back</p>
-        <p>Past the square, past the bridge, past the mills, past the stacks</p>
-        <p>On a gathering storm comes a <span class="reference">tall handsome man</span></p>
-        <p>In a dusty black coat with a <span class="red-right-hand">red right hand</span></p>
+    <!-- main content -->
+    <main>
+        <!-- each section holds a verse 
+        simple h2 tag to show the verse number
+        each line of the verse is a p tag
+        some words/phrases are highlighted with a span tag with a class that is used for additional styling
+        -->
+        <section id="verse1">
+            <h2>Verse 1</h2>
+            <p>Take a little walk to the edge of town and go across the tracks</p>
+            <p>Where the viaduct looms, like a bird of doom as it shifts and cracks</p>
+            <p>Where secrets lie in the border fires in the humming wires</p>
+            <p>Hey man, you know you're never coming back</p>
+            <p>Past the square, past the bridge, past the mills, past the stacks</p>
+            <p>On a gathering storm comes a <span class="reference">tall handsome man</span></p>
+            <p>In a dusty black coat with a <span class="red-right-hand">red right hand</span></p>
+            
+        </section>
         
-    </section>
-    
-    <section id="verse2">
-        <h2>Verse 2</h2>
-        <p><span class="reference">He'll</span> wrap you in his arms, tell you that you've been a good boy</p>
-        <p><span class="reference">He'll</span> rekindle all the dreams, it took you a lifetime to destroy</p>
-        <p><span class="reference">He'll</span> reach deep into the hole, heal your shrinking soul</p>
-        <p>But there won't be a single thing that you can do</p>
-        <p><span class="reference">He's a god, he's a man, he's a ghost, he's a guru</span></p>
-        <p>They're whispering his name through this disappearing land</p>
-        <p>But hidden in his coat is a <span class="red-right-hand">red right hand</span></p>
-    </section>
-    
-    <section id="verse3">
-        <h2>Verse 3</h2>
-        <p>You don't have no money? <span class="reference">He'll</span> get you some</p>
-        <p>You don't have no car? <span class="reference">He'll</span> get you one</p>
-        <p>You don't have no self-respect, you feel like an insect</p>
-        <p>Well don't you worry buddy 'cause here <span class="reference">he</span> comes</p>
-        <p>Through the ghettos and the barrio and the Bowery and the slums</p>
-        <p>A shadow is cast wherever <span class="reference">he</span> stands</p>
-        <p>Stacks of green paper in his <span class="red-right-hand">red right hand</span></p>
-    </section>
+        <section id="verse2">
+            <h2>Verse 2</h2>
+            <p><span class="reference">He'll</span> wrap you in his arms, tell you that you've been a good boy</p>
+            <p><span class="reference">He'll</span> rekindle all the dreams, it took you a lifetime to destroy</p>
+            <p><span class="reference">He'll</span> reach deep into the hole, heal your shrinking soul</p>
+            <p>But there won't be a single thing that you can do</p>
+            <p><span class="reference">He's a god, he's a man, he's a ghost, he's a guru</span></p>
+            <p>They're whispering his name through this disappearing land</p>
+            <p>But hidden in his coat is a <span class="red-right-hand">red right hand</span></p>
+        </section>
+        
+        <section id="verse3">
+            <h2>Verse 3</h2>
+            <p>You don't have no money? <span class="reference">He'll</span> get you some</p>
+            <p>You don't have no car? <span class="reference">He'll</span> get you one</p>
+            <p>You don't have no self-respect, you feel like an insect</p>
+            <p>Well don't you worry buddy 'cause here <span class="reference">he</span> comes</p>
+            <p>Through the ghettos and the barrio and the Bowery and the slums</p>
+            <p>A shadow is cast wherever <span class="reference">he</span> stands</p>
+            <p>Stacks of green paper in his <span class="red-right-hand">red right hand</span></p>
+        </section>
 
-    <section id="verse4">
-        <h2>Verse 4</h2>
-        <p>You'll see <span class="reference">him</span> in your nightmares, you'll see <span class="reference">him</span> in your dreams</p>
-        <p><span class="reference">He'll</span> appear out of nowhere but <span class="reference">he</span> ain't what <span class="reference">he</span> seems</p>
-        <p>You'll see <span class="reference">him</span> in your head, on the TV screen</p>
-        <p>Hey buddy, I'm warning you to turn it off</p>
-        <p><span class="reference">He's a ghost, he's a god, he's a man,  he's a guru</span></p>
-        <p>You're one microscopic cog in <span class="reference">his</span> catastrophic plan</p>
-        <p>Designed and directed by <span class="reference">his</span> <span class="red-right-hand">red right hand</span></p>
-    </section>
+        <section id="verse4">
+            <h2>Verse 4</h2>
+            <p>You'll see <span class="reference">him</span> in your nightmares, you'll see <span class="reference">him</span> in your dreams</p>
+            <p><span class="reference">He'll</span> appear out of nowhere but <span class="reference">he</span> ain't what <span class="reference">he</span> seems</p>
+            <p>You'll see <span class="reference">him</span> in your head, on the TV screen</p>
+            <p>Hey buddy, I'm warning you to turn it off</p>
+            <p><span class="reference">He's a ghost, he's a god, he's a man,  he's a guru</span></p>
+            <p>You're one microscopic cog in <span class="reference">his</span> catastrophic plan</p>
+            <p>Designed and directed by <span class="reference">his</span> <span class="red-right-hand">red right hand</span></p>
+        </section>
+    </main>
 </body>
 </html>
