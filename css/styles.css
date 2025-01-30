@@ -1,95 +1,147 @@
-
+/* scroll behavior for the links to each section */
 html {
     scroll-behavior: smooth;
 }
 
+/* each section, set padding, height and text color(white for dark backgrounds) */
 section {
     padding: 10%;
     height: auto;
     color: #f8f8f8;
 }
 
+ 
 header {
+    /* flex containers so that we can center the text in the columns */
     display: flex;
+    flex-direction: column;
+    /* set the width so it fills the horizontal axis */
     width: 100%;
     height: auto;
+    /* align header and links to center */
     align-items: center;
-    flex-direction: column;
+    /* set colors and a slight shadow to seperate from the image below */
     background-color: rgb(244, 174, 177);
     box-shadow: 0px 10px 10px rgba(244, 174, 177, .5);
 }
 
+
 header h1 {
+    /* move the title from the top  */
     margin-top: 25px;
-    flex-grow: 1;
+    /* set font size, and make sure it is displayed above everything */
     font-size: 2em;
     z-index: 1000;
 
 }
 
-
+/* H3 holds the 'by nick cave' */
 header h3 {
-    font-size: 1em;
     margin: 5px;
+    /* bold and color */
     font-weight: 600;
     color: rgb(254, 228, 218);
+    /* make font roboto and all uppercase */
     font-family: 'Roboto';
     text-transform: uppercase;
-    
+    /* add a text shadow to make a half transparent copy slightly above it */
     text-shadow: 0px -5px 0px rgba(254, 228, 218, 0.5);
 }
 
+/* menu is a flex container to hold the links */
 header menu {
     display: flex;
     list-style: none;
 }
+
+/* for each link */
 header menu li {
-    margin: 15px 20px;
+    /* set a background color, margin, and padding */
+    background-color: rgb(228, 218, 213);
+    margin: 15px 20px 0px;
+    padding: 15px;
+
 }
-a {
-    text-decoration: none;
+/* add a simple hover on the links so change the text color to a dark red */
+header menu li a:hover {
+    color: rgb(54, 6, 6);
 }
 
+/* for all links */
+a {
+    /* remove the underline */
+    text-decoration: none;
+    /* set a new color */
+    color: rgb(147, 40, 40);
+    font-family: 'Roboto';
+}
+
+/* set paragraph elements to have a new font, color, and padding*/
 p {
     font-family: 'Freckle Face';
     color: #ffe5dc;
-}
-section p {
-    text-align: center;
-    font-size: 2em;
     padding: 45px;
+}
+
+section p {
+    /* align all text to center */
+    text-align: center;
+    /* big text */
+    font-size: 2em;
 }
 
 /* for all red right hand references */
 .red-right-hand {
+    /* set font properties and color */
     font-family: 'Caveat Brush';
     font-weight: 900;
     font-size: 1.5em;
     color: rgb(172, 39, 46);
-    /* text-shadow: 4px 1px 1px rgba(78,36,38, 0.5); */
+    /* add a shadow and capitialize the right words */
     text-shadow: 0px 0px 10px rgba(0,0,0, 1);
     text-transform: capitalize;
 }
 /* each reference of the character with the red right hand  */
 .reference {
+    /* set font properties and set to black color */
     font-family: 'Road Rage';
     font-size: 2em;
     font-weight: 700;
     color: #000000;
+    /* add a blurry text shadow to contrast the black nicely */
     text-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
 }
 
+/* for the faded verse count */
+section h2 {
+    /* add a new font and size */
+    font-family: 'Roboto';
+    font-size: 10em;
+    font-weight: 100;
+    /* add a negative margin to decrease the space it takes up */
+    margin: -100px 0px -50px;
+    
+    
+    /* align the text to the center and uppercase all of it */
+    text-align: center;
+    text-transform: uppercase;
+    /* set a white color but make it quite faded */
+    color: rgba(248, 248, 248, 0.2);
+    /* finally, space the letters far apart */
+    letter-spacing: 85px;
+}
+
+
+/* for background images on each section */
 #verse1 {
     background-image: url('../images/pexels-lucaspezeta-3772353.jpg');
     background-size: cover;
-    box-shadow: 0px 10px 10px rgba(255, 255, 255, 0.5);
 }
 
 #verse2 {
     background-image: url('../images/guy-in-window.jpg');
     background-size: cover;
     
-    /* background-image: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, 0.5)); */
 }
 
 #verse3 {
