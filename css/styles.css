@@ -1,6 +1,7 @@
 /* scroll behavior for the links to each section */
 html {
     scroll-behavior: smooth;
+    background-color: #000000;
 }
 
 /* each section, set padding, height and text color(white for dark backgrounds) */
@@ -23,12 +24,14 @@ header {
     /* set colors and a slight shadow to seperate from the image below */
     background-color: rgb(244, 174, 177);
     box-shadow: 0px 10px 10px rgba(244, 174, 177, .5);
+    /* display the shadow over the video */
+    z-index: 1000;
 }
 
 
 header h1 {
     /* move the title from the top  */
-    margin-top: 25px;
+    padding-top: 25px;
     /* set font size, and make sure it is displayed above everything */
     font-size: 2em;
     z-index: 1000;
@@ -131,6 +134,16 @@ section h2 {
     letter-spacing: 85px;
 }
 
+iframe {
+    /* set the width to 100% */
+    width: 100%;
+    height: 100vh;
+    /* set a border to 0 */
+    border: 0;
+    /* set a margin to 0 */
+    
+    margin: 0;
+}
 
 /* for background images on each section */
 #verse1 {
@@ -152,4 +165,13 @@ section h2 {
 #verse4 {
     background-image: url('../images/graveyard.jpg');
     background-size: cover;
+}
+#instrumental {
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(41, 20, 20, 1));
+    background-size: cover;
+}
+#instrumental h2 {
+    font-size: 7.5em;
+    letter-spacing: 30px;
+    overflow: hidden;
 }

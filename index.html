@@ -32,6 +32,9 @@
         <nav>
             <menu>
                 <li>
+                    <a href="#video">Video</a>
+                </li>
+                <li>
                     <a href="#verse1">Verse 1</a>
                 </li>
                 <li>
@@ -48,12 +51,13 @@
     </header>
     <!-- main content -->
     <main>
-        <div>
-            <iframe width="420" height="315"
-            src="https://www.youtube.com/watch?v=RrxePKps87k">
-            </iframe>
-        </div>
-        <!-- each section holds a verse 
+        <!-- youtube video embedded -->
+
+        <iframe id="video"
+        src="https://www.youtube.com/embed/RrxePKps87k">
+        </iframe>
+
+        <!-- each section holds a verse or part of the song
         simple h2 tag to show the verse number
         each line of the verse is a p tag
         some words/phrases are highlighted with a span tag with a class that is used for additional styling
@@ -91,7 +95,10 @@
             <p>A shadow is cast wherever <span class="reference">he</span> stands</p>
             <p>Stacks of green paper in his <span class="red-right-hand">red right hand</span></p>
         </section>
-
+        
+        <section id="instrumental">
+            <h2>Instrumental Break</h2>
+        </section>
         <section id="verse4">
             <h2>Verse 4</h2>
             <p>You'll see <span class="reference">him</span> in your nightmares, you'll see <span class="reference">him</span> in your dreams</p>
