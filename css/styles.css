@@ -141,6 +141,7 @@ section h2 {
     letter-spacing: 85px;
 }
 
+/* css for youtube video */
 iframe {
     /* set the width to 100% */
     width: 100%;
@@ -148,7 +149,6 @@ iframe {
     /* set a border to 0 */
     border: 0;
     /* set a margin to 0 */
-    
     margin: 0;
 }
 
@@ -173,10 +173,12 @@ iframe {
     background-image: url('../images/graveyard.jpg');
     background-size: cover;
 }
+/* simple background for the instrumental section */
 #instrumental {
     background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(41, 20, 20, 1));
     background-size: cover;
 }
+/* change some of the formatting for the h2, as it has much more text */
 #instrumental h2 {
     font-size: 7.5em;
     letter-spacing: 30px;
